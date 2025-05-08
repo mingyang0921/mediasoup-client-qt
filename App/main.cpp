@@ -23,6 +23,7 @@ static void registerMetaTypes()
     qRegisterMetaType<rtc::scoped_refptr<webrtc::MediaStreamTrackInterface>>("rtc::scoped_refptr<webrtc::MediaStreamTrackInterface>");
     qRegisterMetaType<std::shared_ptr<vi::IParticipant>>("std::shared_ptr<vi::IParticipant>");
     qRegisterMetaType<webrtc::VideoFrame*>("const webrtc::VideoFrame*");
+    qRegisterMetaType<std::shared_ptr<webrtc::VideoFrame>>("std::shared_ptr<webrtc::VideoFrame>");
 }
 int main(int argc, char *argv[])
 {
